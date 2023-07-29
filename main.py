@@ -18,4 +18,6 @@ if not db.get('sessions'):
   db.set('sessions', [])
 if not db.get('force'):
   db.set('force', ['trprogram'])
-x = Client(name='loclhosst', api_id=29848011, api_hash='ab9bd73716cfe9939ea5ff0bd9bad498', bot_token=tok, 
+x = Client(name='loclhosst', api_id=29848011, api_hash='ab9bd73716cfe9939ea5ff0bd9bad498', bot_token=tok, workers=20, plugins=p, parse_mode=enums.ParseMode.DEFAULT)
+alive()
+x.run()
