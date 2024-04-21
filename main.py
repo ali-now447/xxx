@@ -5,13 +5,13 @@ from pyromod import listen
 from pyrogram import Client, filters, enums
 from kvsqlite.sync import Client as dt
 p = dict(root='plugins')
-tok = '6364320228:AAEDFtk7nN9cH_1KGJBQ-4DBvHxX8SsGt6M' ## توكنك 
-id = 5108562302
+tok = '6928476494:AAG6ypYkw5bPm3ufRxMTlksUQS0R-nUQwnU' ## توكنك 
+id = 6826299765
 db = dt("data.sqlite", 'fuck')
 if not db.get("checker"):
   db.set('checker', None)
 if not db.get("admin_list"):
-    db.set('admin_list', [5108562302,5108562302])
+    db.set('admin_list', [6826299765])
 if not db.get('ban_list'):
   db.set('ban_list', [])
 if not db.get('sessions'):
